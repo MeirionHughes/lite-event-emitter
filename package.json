@@ -1,6 +1,6 @@
 {
   "name": "lite-event-emitter",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "very light event emitter for node and browser",
   "main": "dist/commonjs/index.js",
   "typings": "dist/commonjs/index.d.ts",
