@@ -131,4 +131,32 @@ describe("LiteEventEmitter", () => {
     let event = new LiteEventEmitter();
     event.emit("foo");
   });
+
+  it("can emit after all subscribers removed", () => {
+    let event = new LiteEventEmitter();
+    event.on("foo", () => { })();
+    event.emit("foo", "bar");
+  });
+
+  it("does call subscription after earlier subscription is disposed", () => {
+    let event = new LiteEventEmitter();
+    let called = 0;
+
+    let dispose = event.on("foo", (...args) => {
+      called++;
+    });
+
+    event.on("foo", (...args) => {
+      expect(args).to.deep.eq([1, 2, 3, 4]);
+      called++;
+    });
+
+    dispose();
+
+    event.emit("foo", 1, 2, 3, 4);
+
+    expect(called).to.be.eq(1);
+  });
+
+
 });
