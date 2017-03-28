@@ -22,14 +22,12 @@
     "registry": "https://registry.npmjs.org/"
   },
   "keywords": [
-    "api",
-    "rowan",
-    "middleware",
-    "request",
-    "response",
-    "websocket",
-    "ws",
-    "stream"
+    "event",
+    "emitter",
+    "lite",
+    "typescript",
+    "typings",
+    "es2015"
   ],
   "author": "Meirion Hughes <crakinshot@yahoo.com>",
   "license": "MIT",
