@@ -8,7 +8,6 @@ A very simple and light event emitter.
 [![NPM downloads][npm-downloads]][npm-url]
 [![Travis Status][travis-image]][travis-url]
 [![codecov](https://codecov.io/gh/MeirionHughes/lite-event-emitter/branch/master/graph/badge.svg)](https://codecov.io/gh/MeirionHughes/lite-event-emitter)
-[![Stability][stability-image]][stability-url]
 
 ## install
 
